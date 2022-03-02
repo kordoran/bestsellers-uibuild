@@ -83,3 +83,86 @@ header {
     font-size: 24px;
   }
 }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 1280px;
+
+  margin: 80px auto 80px;
+
+  .card {
+    position: relative;
+
+    width: 350px;
+    min-height: 250px;
+
+    border: 2px solid #1a24fb;
+    margin: 50px 10px;
+    padding: 40px;
+
+    .number {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    h2 {
+      min-height: 90px;
+      margin-bottom: 20px;
+
+      font-size: 36px;
+    }
+
+    p.sub {
+      margin-bottom: 20px;
+
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    p.text {
+      font-family: "Overpass", sans-serif;
+    }
+
+    button {
+      position: absolute;
+      left: 0;
+      right: 0px;
+      bottom: -30px;
+
+      width: 100%;
+      height: 18px;
+
+      text-align: left;
+      font-size: 14px;
+
+      &:hover {
+        background-color: #1a24fb;
+        color: #f8f7f3;
+      }
+
+      span {
+        position: absolute;
+        right: 0px;
+        top: 50%;
+
+        font-size: 18px;
+
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
